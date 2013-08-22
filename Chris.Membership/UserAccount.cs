@@ -24,10 +24,5 @@
         public DateTime Modified { get; set; }
 
         #endregion
-
-        public bool IsInRole(string roleName)
-        {
-            return Roles.Any(r => r.Name == roleName);
-        }
     }
 }

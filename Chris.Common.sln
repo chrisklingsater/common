@@ -11,14 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chris.Membership.EF", "Chri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chris.Common.EF", "Chris.Common.EF\Chris.Common.EF.csproj", "{2244DE79-49F5-4D7F-BC8F-E7E466ABA5AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chris.Services", "Chris.Services\Chris.Services.csproj", "{208EFA52-24E9-4C52-8A99-6E9EF5C05A13}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7337BB5C-8CB3-4A42-9145-B2DF003C0652}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chris.MVC", "Chris.MVC\Chris.MVC.csproj", "{62B99C2B-483C-49E6-BE92-40BC3357204F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +46,10 @@ Global
 		{2244DE79-49F5-4D7F-BC8F-E7E466ABA5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2244DE79-49F5-4D7F-BC8F-E7E466ABA5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2244DE79-49F5-4D7F-BC8F-E7E466ABA5AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{208EFA52-24E9-4C52-8A99-6E9EF5C05A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{208EFA52-24E9-4C52-8A99-6E9EF5C05A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{208EFA52-24E9-4C52-8A99-6E9EF5C05A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{208EFA52-24E9-4C52-8A99-6E9EF5C05A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62B99C2B-483C-49E6-BE92-40BC3357204F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B99C2B-483C-49E6-BE92-40BC3357204F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B99C2B-483C-49E6-BE92-40BC3357204F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B99C2B-483C-49E6-BE92-40BC3357204F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

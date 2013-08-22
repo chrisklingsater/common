@@ -1,0 +1,35 @@
+﻿@using System.Security.Claims
+@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Do</title>
+    </head>
+    <body>
+        <div>
+              @{
+                  var user = User as ClaimsPrincipal;
+                  
+                  if(user != null)
+                  {
+                      <p>Success</p>
+                  
+                      <p>@user.FindFirst(c => c.Type == ClaimTypes.Name).Value</p>
+                  }
+                  else
+                  {
+                      <p>No success</p>
+                  }
+                  
+              }
+            
+            @Html.ActionLink("Authorize", "Authorized")
+        </div>
+    </body>
+</html>

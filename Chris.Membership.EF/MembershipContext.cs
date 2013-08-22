@@ -13,7 +13,17 @@
     {
         public DbSet<Role> Roles { get; set; }
 
-        public DbSet<UserAccount> Users { get; set; } 
+        public DbSet<UserAccount> Users { get; set; }
+
+        public MembershipContext()
+        {
+            
+        }
+
+        public MembershipContext(string connectionString) : base(connectionString)
+        {
+            
+        }
 
         public override int SaveChanges()
         {

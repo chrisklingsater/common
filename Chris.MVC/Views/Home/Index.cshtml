@@ -1,0 +1,26 @@
+﻿@model Chris.Membership.UserAccount
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @Model.Email
+        
+     @*   @Html.BeginForm("Do", "Home")
+        {
+            @Html.PasswordFor(m => m.Password)
+        }*@
+        
+        @Html.ActionLink("Do", "Do")
+    </div>
+</body>
+</html>

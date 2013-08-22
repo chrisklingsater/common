@@ -30,7 +30,7 @@ namespace Chris.ConsoleApp
         {
             EnableTracing();
 
-            var context = new MembershipContext();
+            var context = new MembershipContext("Claims");
 
             var unitOfWork = new MembershipUnitOfWork(context);
 

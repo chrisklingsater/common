@@ -35,7 +35,10 @@ namespace Chris.Membership
             if (password == null)
                 throw new ArgumentNullException("password");
 
-            var user = new UserAccount { Email = userName, Password = EncryptionHelper.EncryptPassword(password) };
+            var user = unitOfWork.Users.Create();
+            user.Email = userName;
+            user.Password = EncryptionHelper.EncryptPassword(password);
+            user.Roles = new List<Role> { new Role { Name = "Administrator" } };
 
             try
             {
